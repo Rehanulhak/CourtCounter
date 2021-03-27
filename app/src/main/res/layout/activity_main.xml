@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/teamNameA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_a"
+        android:textSize="18sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamScoreA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="56sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamNameA" />
+
+    <TextView
+        android:id="@+id/teamFoulA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fouls"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamScoreA" />
+
+    <TextView
+        android:id="@+id/teamFoulCountA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamFoulA" />
+
+    <TextView
+        android:id="@+id/teamOffsideA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offsides"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamFoulCountA" />
+
+    <TextView
+        android:id="@+id/teamOffsideCountA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamOffsideA" />
+
+    <Button
+        android:id="@+id/goalsButtonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goalA"
+        android:text="@string/goal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/teamOffsideCountA" />
+
+    <Button
+        android:id="@+id/FoulsButtonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="foulA"
+        android:text="@string/foul"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/goalsButtonA" />
+
+    <Button
+        android:id="@+id/OffsidesButtonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="offsideA"
+        android:text="@string/offside"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/FoulsButtonA" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="150dp"
+        android:background="@android:color/darker_gray"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <TextView
+        android:id="@+id/teamNameB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_b"
+        android:textSize="18sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamScoreB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="56sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="20dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamNameB" />
+
+    <TextView
+        android:id="@+id/teamFoulB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fouls"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamScoreB" />
+
+    <TextView
+        android:id="@+id/teamFoulCountB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamFoulB" />
+
+    <TextView
+        android:id="@+id/teamOffsideB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offsides"
+        android:textSize="14sp"
+        android:textColor="#616161"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamFoulCountB" />
+
+    <TextView
+        android:id="@+id/teamOffsideCountB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/_0"
+        android:paddingBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamOffsideB" />
+
+    <Button
+        android:id="@+id/goalsButtonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="goalB"
+        android:text="@string/goal"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teamOffsideCountB" />
+
+    <Button
+        android:id="@+id/FoulsButtonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="foulB"
+        android:text="@string/foul"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goalsButtonB" />
+
+    <Button
+        android:id="@+id/OffsidesButtonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="offsideB"
+        android:text="@string/offside"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/guideline"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/FoulsButtonB" />
+
+    <Button
+        android:id="@+id/endGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="endMatch"
+        android:text="@string/end_match"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

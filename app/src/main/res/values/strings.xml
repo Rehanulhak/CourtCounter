@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CourtCounter</string>
+    <string name="goal">Goal!</string>
+    <string name="foul">Foul!</string>
+    <string name="team_b">Team B</string>
+    <string name="offside">Offside!</string>
+    <string name="end_match">End Match</string>
+    <string name="team_a">Team A</string>
+    <string name="_0">0</string>
+    <string name="fouls">Fouls</string>
+    <string name="offsides">Offsides</string>
+</resources>
